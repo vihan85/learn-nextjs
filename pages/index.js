@@ -1,7 +1,10 @@
 
+import { useRouter } from 'next/router';
 import EventList from '../components/events/event-list';
 import {getFeaturedEvents} from '../dummy-data'
 function HomePage() {
+    const router = useRouter()
+    
     const featuredEvents =  getFeaturedEvents()
     return (
         <div>

@@ -9,7 +9,6 @@ function EventDetailPage() {
     const router = useRouter();
     const eventId = router.query.eventId;
     const event = getEventById(eventId);
-    console.log(event)
     if (!event) {
         return <div><h1>not fuond page</h1></div>;
     }
